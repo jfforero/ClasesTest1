@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Speech Floating Letters</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+
+<body>
+
+<div id="gui">
+  <label>
+    Font Size
+    <input type="range" id="sizeSlider" min="16" max="120" value="32">
+  </label>
+
+  <label>
+    Font
+    <select id="fontSelect">
+      <option value="Arial">Arial</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Times New Roman">Times New Roman</option>
+    </select>
+  </label>
+
+  <p>Click canvas to start speech<br>
+  Press SPACE to drop letters</p>
+</div>
+
+<script src="sketch.js"></script>
+
+</body>
+</html>

@@ -2,14 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Speech Floating Letters</title>
+  <title>El peso de las palabras</title>
+
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
 </head>
 
 <body>
 
+<div id="title">
+  <h1>El peso de las palabras</h1>
+
+  <p class="description">
+    Speak continuously. Words remain suspended while you speak.
+    When the voice stops, language loses its support and the letters fall.
+  </p>
+</div>
+
+
 <div id="gui">
+
+  <div class="instructions">
+    <p><b>Instructions</b></p>
+    <p>Click on the canvas to activate speech recognition.</p>
+    <p>Speak continuously.</p>
+    <p>Press <b>SPACE</b> to let the words fall.</p>
+  </div>
+
   <label>
     Font Size
     <input type="range" id="sizeSlider" min="16" max="120" value="32">
@@ -26,8 +45,6 @@
     </select>
   </label>
 
-  <p>Click canvas to start speech<br>
-  Press SPACE to drop letters</p>
 </div>
 
 <script src="sketch.js"></script>
